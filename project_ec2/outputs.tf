@@ -1,3 +1,3 @@
 output "machines" {
-    value = module.VM
+    value = module.VM.machines
 }

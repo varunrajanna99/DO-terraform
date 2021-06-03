@@ -14,3 +14,9 @@ variable machine_types {
     type = list(string)
     default = ["t2.nano"]
 }
+
+variable aws_user {
+    description = "AWS user account"
+    type = string
+    default = "terraform_usr"
+}

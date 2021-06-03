@@ -1,13 +1,12 @@
 
 variable "ami_type" {
-    type = string
+    type = list(string)
 }
 
 variable "inst_type" {
-    type = string
+    type = list(string)
 }
 
 variable VM_name {
-    type = string
-    default = "I have no name"
+    type = list(string)
 }

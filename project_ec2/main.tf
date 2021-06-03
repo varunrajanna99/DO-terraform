@@ -1,7 +1,6 @@
 module "VM" {
-    count = length(var.machine_names)
     source = "../modules/EC2"
-    ami_type = var.machine_amis[count.index]
-    inst_type = var.machine_types[count.index]
-    VM_name = var.machine_names[count.index]
+    ami_type = var.machine_amis
+    inst_type = var.machine_types
+    VM_name = var.machine_names
   }
